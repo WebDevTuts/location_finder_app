@@ -46,6 +46,9 @@
     // Listen for submit
     document.querySelector('#zipForm').addEventListener('submit', getLocationInfo);
 
+    // Listen for delete
+    document.querySelector('body').addEventListener('click', deleteLocation);
+
     function getLocationInfo(e) {
       e.preventDefault();
 
