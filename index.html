@@ -106,6 +106,15 @@
       // Show correct icon
       document.querySelector(`.icon-${icon}`).style.display = 'inline-flex';
     }
+
+    // Delete location box
+    function deleteLocation(e) {
+      if(e.target.className == 'delete') {
+        document.querySelector('.message').remove();
+        document.querySelector('.zip').value = '';
+        document.querySelector('.icon-check').style.display = 'none';
+      }
+    }
   </script>
 </body>
 </html>
